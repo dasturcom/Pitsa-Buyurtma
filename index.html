@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitsa Buyurtma</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Style css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Pitsa buyurtma qilish</h1>
+
+        <div class="box">
+            <div class="left">
+                <form class="left-inside-form">
+                    <label class="form-inside-label">
+                        Noni qanday bo'lsin ?
+                        <select class="label-inside-select" id="select">
+                            <option disabled selected></option>
+                            <option value="Yupqa">Yupqa</option>
+                            <option value="O'rtacha">O'rtacha</option>
+                            <option value="Qalin">Qalin</option>
+                        </select>
+                    </label>
+                </form>
+
+                <div class="left-inside-box">
+                    <h2 class="box-inside-title">Kattaligi</h2>
+                    <label class="labelRadio">
+                        <span class="radioSpan">25sm</span>
+                        <input class="form-check-input inputRadio" type="radio" name="radioInput" value="25sm"
+                            id="radio">
+                    </label>
+                    <label class="labelRadio">
+                        <span class="radioSpan">30sm</span>
+                        <input class="form-check-input inputRadio" type="radio" name="radioInput" value="30sm"
+                            id="radioInput">
+                    </label>
+                    <label class="labelRadio">
+                        <span class="radioSpan">35sm</span>
+                        <input class="form-check-input inputRadio" type="radio" name="radioInput" value="35sm"
+                            id="inputRadio">
+                    </label>
+                </div>
+
+                <div class="left-inside-div">
+                    <h2 class="div-inside-title">Ustiga nima solaylik ?</h2>
+                    <form class="div-inside-form">
+                    </form>
+                </div>
+
+                <div>
+                    Qo'shimcha
+                    <form class="form">
+                    </form>
+                </div>
+            </div>
+            <div class="rightBox">
+                <span class="span"></span>
+                <div class="right">
+                    <h2>Non : </h2> <span class="spanResult"></span>
+                    <h2>Kattaligi : </h2> <span id="result"></span>
+                    <h2>Ustida : </h2>
+                    <ul></ul>
+                    <h2>Qo'shimcha : </h2>
+                    <ul class="list"></ul>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Yuborish
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Buyurtmangiz qabulqilindi</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <span class="spanResult"></span>
+                                    <span id="result"></span>
+                                    <ul></ul>
+                                    <ul class="list"></ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
